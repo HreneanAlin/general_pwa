@@ -2,6 +2,10 @@
   "name": "general-site",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.8.0",
+    "npm": "6.14.7"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
@@ -14,13 +18,16 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-spring": "^8.0.27"
+    "react-spring": "^8.0.27",
+    "serve": "^11.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
