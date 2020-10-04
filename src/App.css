@@ -44,6 +44,11 @@ footer{
     color: var(--clr-third)
 }
 
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
 /*home page*/
 .home-container{
     padding-top: calc(var(--pd-main) * 3);
@@ -286,6 +291,33 @@ footer{
     }
 }
 
+/*Other Projects page*/
+
+.other-projects-container{
+    padding-top: calc(var(--pd-main) * 3);
+    padding-left:1rem;
+    padding-right:1rem;
+    padding-bottom:1rem;
+    background-color: var(--clr-secundary);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2em;
+    min-height: 100vh;
+}
+
+
+.project-container{
+    padding: var(--pd-main);
+    background-color: var(--clr-third);
+    color: var(--clr-main);
+    font-family: var(--font-family-normal);
+    border-radius: var(--border-radius);
+    display: grid;
+    box-shadow: 2px 2px 4px var(--clr-fith);
+}
+.project-description{
+    text-align: center;
+}
 /* User page*/
 .users-container {
     padding-top: calc(var(--pd-main) * 3);

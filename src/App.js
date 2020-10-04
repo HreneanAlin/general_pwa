@@ -16,6 +16,7 @@ import PokemonApp from "./Components/PokemonApp";
 import PokemonDetails from "./Components/PokemonDetails";
 import WeatherApp from "./Components/WeatherApp";
 import Footer from "./Components/Footer";
+import OtherProjects from "./Components/OtherProjects";
 
 function App() {
     return (
@@ -32,8 +33,8 @@ function App() {
                     <Route path="/money-converter">
                         <MoneyConverter/>
                     </Route>
-                    <Route path="/users">
-                        <Users/>
+                    <Route path="/others">
+                        <OtherProjects/>
                     </Route>
                     <Route path="/quiz">
                         <FlashCardQuiz/>
