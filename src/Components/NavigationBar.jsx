@@ -10,8 +10,7 @@ function NavigationBar(props) {
     const linkEl5 = useRef()
     const linkEl6 = useRef()
     const linkEl7 = useRef()
-    const linkEl8 = useRef()
-    const links = [linkEl1,linkEl2,linkEl3,linkEl4,linkEl5,linkEl6,linkEl7,linkEl8]
+    const links = [linkEl1,linkEl2,linkEl3,linkEl4,linkEl5,linkEl6,linkEl7]
 
 
 
@@ -61,9 +60,7 @@ function NavigationBar(props) {
                 <li><Link to={"/weather"}
                           onClick={closeMenu}
                           ref={linkEl7}>Weather</Link></li>
-                <li><Link to={"/some"}
-                          onClick={closeMenu}
-                          ref={linkEl8}>Others</Link></li>
+
             </ul>
         </nav>
     );
